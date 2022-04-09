@@ -1,0 +1,110 @@
+.grid_boxes{
+    /* border: 1px solid; */
+    /* height: 200px; */
+    width: 50%;
+    margin: 100px 25%;
+    padding: 2%;
+}
+h2{
+    margin-bottom: 30px;
+    font-style: italic;
+}
+#contact_h3{
+    margin-bottom: 7px;
+    font-style: italic;
+}
+.grid_containers_contact{
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    grid-column-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.grid_item{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.grid_item p{
+    float: left;
+}
+
+.grid_img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.grid_contain{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.form_cont{
+    margin: 15% 0 0;
+    padding: 2%;
+}
+
+.contact_container{
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-column-gap: 20px; */
+}
+
+/* Contact form and contact help should have equal size in frontend so change it here in both classes separately */
+
+.contact_form{
+     height: 130%;
+     width: 100%;
+}
+
+.contact_help{
+    border: 1px solid;
+    padding: 2%;
+    height: 120%;
+}
+
+input{
+    width: 80%; 
+    margin: 10px 13px 5px 0;
+    height: 6%;
+    padding: 2%;
+}
+
+.contact_form textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 85%;
+    margin: 10px 13px 5px 0;
+    padding: 2%;
+    line-height: 1.2em
+}
+
+.text_area{
+    margin: 10px 13px 5px 0;
+    /* padding: 1%; */
+    height: 22%;
+    width: 80%;
+}
+
+.contact_form button{
+    color: #FFFFFF;
+    background-color: #5180F1;
+    border-radius: 5%;
+    height: 14%;
+    width: 30%;
+    font-size: 12px;
+    margin-left: 56%;
+    cursor: pointer;
+}
+.contact_help h4{
+    margin: 7px;
+}
+.contact_help p{
+    font-size: 14px;
+}

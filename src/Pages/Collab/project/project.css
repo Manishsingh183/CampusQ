@@ -1,0 +1,53 @@
+#grid_boxes{
+    /* border: 1px solid; */
+    /* height: 200px; */
+    width: 70%;
+    margin: 2px 25% 0 15%;
+    padding: 2%;
+}
+
+.grid_containers{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+
+#grid_img img{
+    height: 100%;
+    width: 100%;
+}
+
+#grid_item{
+    /* border: 1px solid; */
+    width: 80%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+#grid_item p{
+    float: left;
+    margin-bottom: 5px;
+}
+
+#grid_item p span{
+    font-weight: 800;
+}
+
+#proj-btn{
+    position: relative;
+    left: 10%;
+    top: 5%;
+    color: #19FD00;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+hr{
+    width: 50%;
+    margin-bottom: 4%;
+}

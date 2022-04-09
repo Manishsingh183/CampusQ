@@ -1,0 +1,31 @@
+#notfound h1{
+    position: absolute;
+    top: 40%;
+    left: 33%; 
+}
+
+#notfound span{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+#failedIcon{
+    width:100px;
+    height:100px;
+}
+
+#notfound button{
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    color: #fff;
+    background-color: #1C6DD0;
+    height: 5%;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+#notfound button:hover{
+   color: white;
+   font-weight: bold;
+}

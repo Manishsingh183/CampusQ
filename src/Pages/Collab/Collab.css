@@ -1,0 +1,45 @@
+body{
+    background-color: #EFF4FA;
+}
+
+.collab-container{
+    display: grid;
+    grid-template-columns: 8% 92%;
+    margin: 0 5%;
+}
+
+#collab_btn{
+    color: black;
+    width: 40%;
+    height: 50px;
+    /* margin-top: 12%;
+    margin-left: 45%; */
+    margin: 5% 45% 2%;
+}
+
+#project{
+    height: 80%;
+    border-radius: 5%;
+    /* padding: 15px; */
+    width: 20%;
+    color: #fff;
+    background-color: #34F31F;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+#people{
+    height: 80%;
+    width: 20%;
+    border-radius: 5%;
+    color:black;
+    /* padding:15px; */
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+
+
+

@@ -1,0 +1,97 @@
+body{
+    background-color: #EFF4FA;
+    font-family: Montserrat serif;
+}
+
+.gridbox{
+    background-color:#fff;
+    height: 10%;
+    width: 40%;
+    border: 1px solid;
+    margin:100px 24% 2%;
+    padding: 2% 5%; 
+    box-shadow: 1px 2px;
+    border-radius: 1%;
+}
+
+h5{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.post_img{
+     width: 100%;
+     margin-bottom: 8px;
+}
+
+.postcard_p{
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+button{
+    background-color: #fff;
+    border: 0;
+    color: #5180F1;
+}
+.wua{
+    position: relative;
+    left: 60%;
+}
+
+.RelPost{
+    background-color:#fff;
+    height: 10%;
+    width: 40%;
+    border: 1px solid;
+    margin:0 24% 2%;
+    padding: 2% 5%; 
+    /* box-shadow: 1px 2px; */
+    border-radius: 2%;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wua{
+        position: relative;
+        left: 46%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .wua{
+        position: relative;
+        left: 50%;
+    }
+    
+    .gridbox{
+        background-color:#fff;
+        height: 10%;
+        width: 62%;
+        border: 1px solid;
+        margin:100px 14% 2%;
+        padding: 2% 5%; 
+        box-shadow: 1px 2px;
+        border-radius: 1%;
+    }
+
+    .RelPost{
+        background-color:#fff;
+        height: 10%;
+        width: 62%;
+        border: 1px solid;
+        margin:0 14% 2%;
+        padding: 2% 5%; 
+        /* box-shadow: 1px 2px; */
+        border-radius: 2%;
+        margin-bottom: 2px;
+    }
+    
+  }
+  @media only screen and (max-width: 590px) {
+    .wua{
+        position: relative;
+        left: 40%;
+    }
+  }
+
+
+
+
