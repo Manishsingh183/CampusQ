@@ -35,3 +35,9 @@
     padding-top: 10px;
     font-size: 12px;
 }
+
+#read-more{
+   color: red;
+   font-weight: bold;
+   cursor: pointer;
+}

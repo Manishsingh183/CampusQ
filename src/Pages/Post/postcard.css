@@ -32,9 +32,13 @@ button{
     border: 0;
     color: #5180F1;
 }
+.comment{
+    cursor: pointer;
+}
 .wua{
     position: relative;
     left: 60%;
+    cursor: pointer;
 }
 
 .RelPost{
@@ -53,12 +57,14 @@ button{
     .wua{
         position: relative;
         left: 46%;
+        cursor: pointer;
     }
   }
   @media only screen and (max-width: 768px) {
     .wua{
         position: relative;
         left: 50%;
+        cursor: pointer;
     }
     
     .gridbox{
@@ -89,6 +95,7 @@ button{
     .wua{
         position: relative;
         left: 40%;
+        cursor: pointer;
     }
   }
 

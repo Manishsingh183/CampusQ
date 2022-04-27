@@ -11,6 +11,8 @@ import Collab from './Pages/Collab/collab';
 import Contact from './Pages/Conatct/contact';
 import AskQue from "./Pages/Askque/Askque";
 import NotFound from './Pages/NotFound/Notfound';
+import AddProject from './Pages/AddProject/AddProject';
+import AddSelf from './Pages/AddSelf/AddSelf';
 
 
 
@@ -23,5 +25,7 @@ ReactDOM.render(<BrowserRouter>
                   <Route path="post" element={<Post />} />
                   <Route path="askque" element={<AskQue />} />
                   <Route path="resources" element={<NotFound />} />
+                  <Route path="add_proj" element={<AddProject />} />
+                  <Route path="add_self" element={<AddSelf />} />
               </Routes>
             </BrowserRouter>, document.getElementById("root"));

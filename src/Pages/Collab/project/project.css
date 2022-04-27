@@ -6,11 +6,11 @@
     padding: 2%;
 }
 
-.grid_containers{
+.proj_grid_containers{
     display: grid;
     grid-template-columns: 20% 80%;
     grid-column-gap: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     width: 80%;
     position: relative;
     left: 20%;
@@ -28,7 +28,6 @@
     margin-bottom: 20px;
 }
 #grid_item p{
-    float: left;
     margin-bottom: 5px;
 }
 
@@ -36,10 +35,14 @@
     font-weight: 800;
 }
 
+#collab-req{
+    margin-right: 50%;
+}
+
 #proj-btn{
     position: relative;
-    left: 10%;
-    top: 5%;
+    left: 250%;
+    top: -10px;
     color: #19FD00;
     background-color: transparent;
     cursor: pointer;

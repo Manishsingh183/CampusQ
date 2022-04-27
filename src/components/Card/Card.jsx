@@ -1,7 +1,32 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import {Link} from 'react-router-dom';
 import "./Card.css";
+import axios from 'axios';
+import qs from 'qs';
+import baseURL from "../../baseUrl";
 
 function Card(props) {
+
+    const [cardId,setCardID] = useState('');
+
+    async function handleReadMore(){
+        console.log("Clicked id: ",props.id);
+        setCardID(props.id);
+        const data = {
+            id_details : props.id,
+            question : props.question,
+            completed : false
+        }
+        await axios({
+            method:'post',
+            url: baseURL+'collab',
+            data: qs.stringify(data),
+        }).then(res => {
+            console.log("data sent",cardId);
+            console.log(res);
+        }).catch(err=>{console.log(err);console.log("Cant send Data",cardId)});
+     } 
+
 
 
     return <div className="card">
@@ -18,7 +43,11 @@ function Card(props) {
 
         <div className="card-body">
             <h3>{props.question}</h3>
-            <p>{props.topAnswer}</p>
+            <p>{props.topAnswer}
+            {/* <Link to='/post'> */}
+            <span id="read-more" onClick={handleReadMore}>Read More..</span>
+            {/* </Link> */}
+            </p>
         </div>
 
     </div>;

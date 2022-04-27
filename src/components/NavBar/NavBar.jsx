@@ -1,25 +1,14 @@
 import React from "react";
 import "./NavBar.css";
-import {Route,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import PeopleIcon from '@mui/icons-material/People';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Collab from '../../Pages/Collab/collab';
-import Contact from '../../Pages/Conatct/contact';
+import Login from '../../login'
 
 
 
 function NavBar() {
 
-    function handleCollab() {
-        <Link to= "/collab"><Collab/></Link>
-    }
-    function handleResource() {
-        <Link to="/contact"><Contact/></Link>
-    }
-    function handleContact() {
-        // <Link to= "/contact"></Link>
-
-    }
 
     return <div id="navbar">
 
@@ -43,14 +32,16 @@ function NavBar() {
         <Link className="nav-btn" to="/resources">Resources</Link>
         <Link className="nav-btn" to="/contact">Contact Us</Link>
         
-        {/* <button className="nav-btn" onClick={handleContact}>Contact Us</button> */}
-
-        <button className="login-btn">
+        
+        {/* <form action="/auth/google">
+        <button className="login-btn" type="submit">
             <div className="icon-div">
                 <AccountCircleIcon />
                 <span>Login</span>
             </div>
         </button>
+        </form> */}
+        <Login className="g-login"/>
 
     </div>;
 }

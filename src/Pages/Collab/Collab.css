@@ -27,6 +27,7 @@ body{
     font-size: 15px;
     font-weight: bold;
     margin-right: 2%;
+    cursor: pointer;
 }
 
 #people{
@@ -37,9 +38,44 @@ body{
     /* padding:15px; */
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
+}
 
+#people_css{
+    display: flex;
+    /* float: left; */
 }
 
 
+#add-proj{
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    left: 3%;
+    width: auto;
+    border-radius: 5%;
+    color:#fff;
+    background-color: #5c82ff;
+    font-size: 18px;
+    font-weight: 900;
+}
 
+#add-proj:hover{
+    background-color: #819cf7;
+}
 
+#add-self{
+    cursor: pointer;
+    position: fixed;
+    left: 3%;
+    border-radius: 5%;
+    top: 220px;
+    background-color: #5c82ff;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#add-self:hover{
+    background-color: #819cf7;
+}

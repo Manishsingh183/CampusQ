@@ -5,7 +5,7 @@ import Person from '../../components/Person/Person';
 import RelatedPost from '../../components/RelatedPost/Relatedpost';
 
 
-function PostCard(){
+function PostCard(props){
 
      function HandleComment(){
 
@@ -24,8 +24,9 @@ function PostCard(){
                   <Person/>
                   </div>
                   <div className='que'>
-                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Aenean ut ligula ac ligula blandit eleifend.</h5>
+                      {/* <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Aenean ut ligula ac ligula blandit eleifend.</h5> */}
+                       <h5>{props.data.question}</h5>
                   </div>
                   <hr></hr>
                    <img className='post_img' src="https://picsum.photos/450/250" alt='Question related Image'/>
