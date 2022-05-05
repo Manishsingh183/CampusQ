@@ -1,14 +1,14 @@
 
 
-/* .g-login{
-    height: 20px;
-} */
-
-
+@media only screen and (min-width: 1024px) {
 #navbar > * {
     display: inline-block;
     /* font-family: 'Kaushan Script', 'cursive'; */
     text-decoration: none;
+}
+
+#more-option{
+    display: none;
 }
 
 h1 {
@@ -83,4 +83,132 @@ h1 > span {
 
 .icon-div > span {
     padding-left: 5px;
+  }
+
+
+
+
+
+}
+/* .......................................................................................................... */
+
+                        /* Below 1024px */
+@media only screen and (max-width: 640px) {
+h1 {
+    color: #054C3C;
+    margin: 0 25px 0 100px;
+    cursor: pointer;
+}
+
+h1 > span {
+    color: #F32323;
+    font-family: 'Kaushan Script', 'cursive';
+}
+#search-input {
+    height: 25px;
+    width: 200px;
+    margin: 0 50px 0 25px;
+    border-radius: 13px;
+    border: 2px solid gray;
+}
+
+#navbar {
+    background-color: #B0D0F6;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+}#more-option{
+    margin: 0 20px 0 3%;
+    height: 38px;
+    width: 38px;
+}
+
+.login-btn {
+    background-color: #1C6DD0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 2%;
+}
+
+#search-input {
+    display: none;
+}
+.nav-btn {
+    display:none;
+}
+#g-login{
+    display: none;
+}
+Link{
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B0D0F6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+.sidenav link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.sidenav link:hover {
+    color: #f1f1f1;
+  }
+  
+.sidenav #closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.sidenav p{
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.side-link{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+#mysideNav{
+    width:100%;
+}
+#cancel_icon{
+    color:#fff;
+    position: relative;
+    top: -7.5%;
+    left: 90%;
+}
+
 }

@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import {Link} from 'react-router-dom';
 import PeopleIcon from '@mui/icons-material/People';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Login from '../../login'
+import ReorderIcon from '@mui/icons-material/Reorder';
+import CancelIcon from '@mui/icons-material/Cancel';
+import Login from '../../login';
 
 
 
 function NavBar() {
 
+    const[mobileview,setMobileView] = useState(false);
 
-    return <div id="navbar">
+    function handleClick(){
+        setMobileView(true);
+    }
 
+    function handleCancel(){
+        setMobileView(false);
+    }
+
+    return (
+        <div>
+        {mobileview ? <div className="sidenav" id="mysideNav">
+            <CancelIcon id="cancel_icon" onClick={handleCancel}/>
+            <p><Link id="link" className="side-link" to="/askque">Ask question</Link></p>
+            <p><Link id="link" className="side-link" to="/collab">Collaboration</Link></p>
+            <p><Link id="link" className="side-link" to="/resources">Resources</Link></p>
+            <p><Link id="link" className="side-link" to="/contact">Contact Us</Link></p>
+            <p><Login /></p>
+        </div>
+        : <div id="navbar">
+        
+        <ReorderIcon id="more-option" onClick={handleClick}/>
         <Link to="/">
         <h1>Campus<span>Q</span></h1>
         </Link>
-        
-
-
         <form>
             <input id="search-input" type="search" placeholder="Search"></input>
         </form>
@@ -33,7 +52,8 @@ function NavBar() {
         <Link className="nav-btn" to="/contact">Contact Us</Link>
         
         
-        {/* <form action="/auth/google">
+        
+        {/* <form action='/auth/google'>
         <button className="login-btn" type="submit">
             <div className="icon-div">
                 <AccountCircleIcon />
@@ -41,9 +61,12 @@ function NavBar() {
             </div>
         </button>
         </form> */}
-        <Login className="g-login"/>
-
-    </div>;
+        <div id="g-login">
+        <Login />
+        </div>
+        
+        </div>}
+    </div>)
 }
 
 export default NavBar;

@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1024px) {
 #ask_popup{
     border: 1px solid black;
     position: absolute;
@@ -17,25 +18,6 @@
     left: 98%;
     top: -45px;
 }
-
-@media screen and (min-width: 1320px) {
-    #askque_cancel_icon{
-        position: relative;
-        left: 6%;
-        top: -45px;
-    }
-
-    #ask_popup{
-        border: 1px solid black;
-        position: absolute;
-        top:10%;
-        left: 30%;
-        width: 550px;
-        padding:20px;
-        background-color: azure;
-    }
-
-  }
 
 #askque_cancel_icon:hover{
     color: red
@@ -106,3 +88,129 @@
 #que_submit_button:hover{
  background-color: blueviolet;
 }
+}
+
+
+
+
+  /* ................................Below 1024 .............................................. */
+
+@media only screen and (max-width: 640px) {
+
+    #ask_popup{
+        border: 1px solid black;
+        position: absolute;
+        top:10%;
+        left: 10%;
+        width: 70%;
+        padding:20px;
+        background-color: azure;
+    }
+    
+    #ask_popup h3{
+        height: 30px;
+    }
+    
+    #askque_cancel_icon{
+        position: relative;
+        left: 98%;
+        top: -45px;
+    }
+    
+    #askque_cancel_icon:hover{
+        color: red
+    }
+    
+    #ask-flex{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: -10px;
+        /* column-gap: 10px; */
+    }
+    
+    
+    #img_upload{
+        display: flex;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    #font_upload{
+        height: 45px;
+        border: 1px solid black;
+    }
+    
+    #font_upload p{
+        padding: 10px;
+        width:fit-content;
+    }
+    
+    #font-icon-upload{
+        font-size: 200%;
+        position: relative;
+        top: 3px; 
+        color: #fff;
+    }
+    
+    #upload-button{
+        width: 100px;
+        background-color: blue;
+        color:aliceblue;
+        height: 47px;
+        cursor: pointer;
+    }
+    
+    #upload-button:hover{
+        background-color: blueviolet;
+    }
+    
+                       /* Question Box Css */
+    
+    #que_box textarea{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 75%;
+        margin-top: 10px;
+
+    }
+    
+    #que_submit_button{
+        width: 35%;
+        background-color: blue;
+        color:aliceblue;
+        height: 40px;
+        position: relative;
+        left: 65%;   
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #que_submit_button:hover{
+     background-color: blueviolet;
+    }
+
+
+}
+
+
+  /* ................................Below 1024 .............................................. */
+  /* @media screen and (min-width: 1320px) {
+    #askque_cancel_icon{
+        position: relative;
+        left: 6%;
+        top: -45px;
+    }
+
+    #ask_popup{
+        border: 1px solid black;
+        position: absolute;
+        top:10%;
+        left: 30%;
+        width: 550px;
+        padding:20px;
+        background-color: azure;
+    }
+
+  } */

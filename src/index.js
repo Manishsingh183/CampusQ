@@ -27,5 +27,6 @@ ReactDOM.render(<BrowserRouter>
                   <Route path="resources" element={<NotFound />} />
                   <Route path="add_proj" element={<AddProject />} />
                   <Route path="add_self" element={<AddSelf />} />
+                  <Route path="auth/google"/>
               </Routes>
             </BrowserRouter>, document.getElementById("root"));

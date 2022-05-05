@@ -52,5 +52,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "dotenv-webpack": "^7.1.0"
+  }
 }

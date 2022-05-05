@@ -1,3 +1,6 @@
+
+@media only screen and (min-width: 1024px) {
+
 .card {
     background-color: white;
     height: 25%;
@@ -40,4 +43,59 @@
    color: red;
    font-weight: bold;
    cursor: pointer;
+}
+
+
+}
+
+/* ................................Below 1024 start.............................................. */
+
+
+@media only screen and (max-width: 640px) {
+.card {
+    background-color: white;
+    height: 50%;
+    width: 85%;
+    margin: 20px 10px 10px 0;
+    border: 1px solid grey;
+}
+
+.card-heading {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    padding: 15px 0 0 20px;
+    margin-right: 90px;
+}
+.card-img {
+    border-radius: 100%;
+}
+
+.name-div {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.name-div > p {
+    color: grey;
+    margin-top: -20px;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 13px;
+}
+
+.card-body > p {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+
+#read-more{
+   color: red;
+   font-weight: bold;
+   cursor: pointer;
+}
 }

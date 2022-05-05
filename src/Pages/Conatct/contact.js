@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import "./Contact.css";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import NavBar from "../../components/NavBar/NavBar";
 
 function Contact(){
@@ -41,26 +44,14 @@ function Contact(){
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ante nec risus suscipit 
                         accumsan. Sed volutpat quis metus id ullamcorper. Aenean mattis est lorem. 
                         Mauris non varius nunc. Nunc sed ex ut ligula convallis faucibus.</p>
-                    </div>
+                    </div> 
                     <div className='grid_contain'>
-                       <div></div>
-                       <div></div>
-                    </div>
+                           <a href='https://www.linkedin.com/in/manish-kumar-singh-0921a4200/'><LinkedInIcon/></a>
+                           <a href='https://github.com/Manishsingh183'><GitHubIcon/></a>
+                           <InstagramIcon/>
+                       </div>                                          
                 </div>
 
-                 {/* .............Person 2.................. */}
-
-                <div className='grid_containers_contact'>
-                    <div className='grid_img'>
-                        <img src = "https://picsum.photos/450/250" alt="DevPhoto"/>
-                    </div>
-                    <div className='grid_item'>
-                        <h3 id="contact_h3">Developer No. 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ante nec risus suscipit 
-                        accumsan. Sed volutpat quis metus id ullamcorper. Aenean mattis est lorem. 
-                        Mauris non varius nunc. Nunc sed ex ut ligula convallis faucibus.</p>
-                    </div>
-                </div>
 
                 
                                               {/* Contact form started */}

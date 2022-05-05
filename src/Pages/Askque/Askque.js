@@ -49,11 +49,8 @@ function Askque(){
                     <div id="img_upload">
                       <div id="font_upload">
                         <p>Upload Image Here</p>
-                        <FileUploadIcon id="font-icon-upload"/>
                       </div>
-                      <div>
-                       <button id="upload-button"> Upload </button>
-                      </div>
+                      <button id="upload-button"><FileUploadIcon id="font-icon-upload"/> Upload </button>
                     </div>   
                     {/* Question Box */}
                     <div id="que_box">
