@@ -155,14 +155,19 @@ input{
     
     
     .grid_contain{
-        display: grid;
-        grid-template-columns: auto;
-        position: relative;
-        top: 40px;
-        right: 26px;
+        display: flex;
+        /* grid-template-columns: auto; */
+        position: absolute;
+        top: 300px;
+        left: 8%;
         height:80%
     }
     
+
+    .grid_contain a{
+        margin-right: 2px;
+    }
+
     .form_cont{
         margin: 20% 0 0;
         padding: 2%;

@@ -44,24 +44,23 @@ function Collab(){
     return (
         <React.Fragment>
             <NavBar/>
-            <h6>Hello</h6>
-            <div id='collab_btn'>
-                <button id="project" onClick={handleProject}>Project</button>
-                <button id="people" onClick={handlePeople}>People</button>
-            </div>
-            <div>
-                <Link to="/add_proj">
-                <button id="add-proj"><span><AddIcon/></span>Add Project</button>
-                </Link>
-                <Link to="/add_self">
-                <button id ="add-self"><span><AddIcon/></span>Add Yourself</button>
-                </Link>
-            </div>
-
+            {/* <h6>Hello</h6> */}
+                <div id='collab_btn'>
+                  <button id="project" onClick={handleProject}>Project</button>
+                  <button id="people" onClick={handlePeople}>People</button>
+                </div>
+                <div>
+                  <Link to="/add_proj">
+                  <button id="add-proj"><span><AddIcon/></span>Add Project</button>
+                  </Link>
+                  <Link to="/add_self">
+                  <button id ="add-self"><span><AddIcon/></span>Add Yourself</button>
+                  </Link>
+                </div>
  
             <div>
             {ProjectActive ?
-               <div>
+               <div id='collabList'>
 
                {arr.map((ele)=>{
                      return (

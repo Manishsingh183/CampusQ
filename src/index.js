@@ -22,7 +22,7 @@ ReactDOM.render(<BrowserRouter>
                   <Route path="/" element={<App />} />
                   <Route path="contact" element={<Contact />} />
                   <Route path="collab" element={<Collab />} />
-                  <Route path="post" element={<Post />} />
+                  <Route path="posts/:cardId" element={<Post />} />
                   <Route path="askque" element={<AskQue />} />
                   <Route path="resources" element={<NotFound />} />
                   <Route path="add_proj" element={<AddProject />} />

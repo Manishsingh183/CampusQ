@@ -8,12 +8,12 @@ import './Askque.css';
 import { Link } from "react-router-dom";
 import qs from 'qs';
 import { render } from "@testing-library/react";
+import baseURL from '../../baseUrl';
 
 
 
 function Askque(){
 
-    const baseURL = "http://localhost:4000/askque";
     const [Que,setQue] = useState("");
     const [IsRedirect,setRedirect] = useState(0);
 
@@ -31,7 +31,7 @@ function Askque(){
         }
         await axios({
             method:'post',
-            url: baseURL,
+            url: baseURL+'askque',
             data :qs.stringify(data) 
         }).then(res => {console.log(res); setRedirect(1)})
         .catch(err=>console.log(err));

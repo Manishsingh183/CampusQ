@@ -78,11 +78,7 @@ function Canvas() {
                     />
                      )
                  })
-                }    
-                    
-                    
-
-
+                }                     
             </div>
             
         </div>

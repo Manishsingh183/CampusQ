@@ -37,26 +37,26 @@
   @media only screen and (max-width: 640px) {
     
     #notfound h1{
-        position: absolute;
-        top: 37%;
-        left: 31%; 
+        display: flex;
+        justify-content: center;
     }
 
     
     #notfound span{
-        position: absolute;
+        /* position: absolute;
         top: 35%;
-        left: 30%;
+        left: 30%; */
+        margin-left: 40%;
     }
     #failedIcon{
-        width:100px;
-        height:100px;
+        width:16%;
+        height:20%;
     }
     
     #notfound button{
         position: absolute;
-        top: 55%;
-        left: 41%;
+        top: 45%;
+        left: 32%;
         color: #fff;
         background-color: #1C6DD0;
         height: 5%;
@@ -70,8 +70,11 @@
     }
 
     #together{
-        margin: 10px;
-        
+        /* margin: 10px; */
+        position: absolute;
+        left: 14%;
+        top: 25%;
+        margin-bottom: 10px;
     }
 
   }

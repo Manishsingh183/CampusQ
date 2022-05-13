@@ -1,7 +1,7 @@
 body{
     background-color: #EFF4FA;
 }
-
+@media only screen and (min-width: 1024px) {
 .collab-container{
     display: grid;
     grid-template-columns: 8% 92%;
@@ -55,9 +55,12 @@ body{
     width: auto;
     border-radius: 5%;
     color:#fff;
-    background-color: #5c82ff;
+    background-color: #22aee0;
     font-size: 18px;
     font-weight: 900;
+    text-align: center;
+    line-height: 2;
+    display: inline-flex;
 }
 
 #add-proj:hover{
@@ -70,12 +73,129 @@ body{
     left: 3%;
     border-radius: 5%;
     top: 220px;
-    background-color: #5c82ff;
+    background-color: #22aee0;
     color:#fff;
     font-size: 18px;
     font-weight: 900;
+    text-align: center;
+    line-height: 2;
+    display: inline-flex;
 }
 
 #add-self:hover{
     background-color: #819cf7;
+}
+}
+
+
+/* ................................Below 1024 .............................................. */
+
+@media only screen and (max-width: 640px) {
+
+    
+    /* .mobileView{
+        display: flex;
+        float: left;
+    } */
+    
+    
+    .collab-container{
+        display: grid;
+        grid-template-columns: 8% 92%;
+        margin: 0 5%;
+    }
+    
+    #collab_btn{
+        color: black;
+        width: 220px;
+        height: 50px;
+        position: absolute;
+        left: 70%;
+        display: flex;
+        justify-content: center;
+        top: 90px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    
+    #project{
+        height: 80%;
+        border-radius: 5%;
+        /* padding: 15px; */
+        width: fit-content;
+        color: #fff;
+        background-color: #34F31F;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 2%;
+        cursor: pointer;
+        text-align: center;
+        line-height: 2;
+        display: inline-flex;
+    }
+    
+    #people{
+        height: 80%;
+        width: fit-content;
+        border-radius: 5%;
+        color:black;
+        /* padding:15px; */
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        line-height: 2;
+        display: inline-flex;
+    }
+    
+    #people_css{
+        display: flex;
+        /* float: left; */
+    }
+    
+    
+    #add-proj{
+        z-index: 1;
+        cursor: pointer;
+        position: fixed;
+        top:60px;
+        width: fit-content;
+        border-radius: 5%;
+        color:#fff;
+        background-color: #22aee0;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 2;
+        display: inline-flex;
+    }
+    
+    #add-proj:hover{
+        background-color: #819cf7;
+    }
+    
+    #add-self{
+        z-index: 1;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        border-radius: 5%;
+        top: 60px;
+        background-color: #22aee0;
+        color:#fff;
+        font-size: 20px;
+        font-weight: 700;
+        align-items: center;
+        line-height: 2;
+        display: inline-flex;
+    }
+    
+    #add-self:hover{
+        background-color: #819cf7;
+    }
+
+    #collabList{
+        position: absolute;
+        top: 22%;
+    }
 }

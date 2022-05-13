@@ -10,8 +10,10 @@ function NotFound(){
     return <div>
       <NavBar/>
      <div id="notfound">
-         <div id="together"><span><SentimentVeryDissatisfiedIcon id="failedIcon"/></span>
-         <h1>Service Unavailable!!</h1>
+         <div id="together">
+         <span><SentimentVeryDissatisfiedIcon id="failedIcon"/></span>
+         <h1>Service</h1>
+         <h1> Unavailable!!</h1>
          </div>
          <Link to="/">
          <button>Return to Home Page</button>

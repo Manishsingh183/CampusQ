@@ -7,24 +7,25 @@ import baseURL from "../../baseUrl";
 
 function Card(props) {
 
-    const [cardId,setCardID] = useState('');
+
 
     async function handleReadMore(){
+        
         console.log("Clicked id: ",props.id);
-        setCardID(props.id);
         const data = {
             id_details : props.id,
             question : props.question,
             completed : false
         }
+
         await axios({
             method:'post',
-            url: baseURL+'collab',
+            url: 'http://localhost:4000/posts',
             data: qs.stringify(data),
         }).then(res => {
-            console.log("data sent",cardId);
+            console.log("data sent");
             console.log(res);
-        }).catch(err=>{console.log(err);console.log("Cant send Data",cardId)});
+        }).catch(err=>{console.log(err);console.log("Cant send Data")});
      } 
 
 
@@ -40,13 +41,12 @@ function Card(props) {
                 <p>{props.time} {props.date}, {props.branch}</p>
             </div>
         </div>
-
         <div className="card-body">
             <h3>{props.question}</h3>
             <p>{props.topAnswer}
-            {/* <Link to='/post'> */}
+            <Link to={`/posts/${props.id}`}>
             <span id="read-more" onClick={handleReadMore}>Read More..</span>
-            {/* </Link> */}
+            </Link>
             </p>
         </div>
 

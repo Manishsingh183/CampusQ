@@ -94,9 +94,9 @@ h1 > span {
 
                         /* Below 1024px */
 @media only screen and (max-width: 640px) {
-h1 {
+#campusTitle {
     color: #054C3C;
-    margin: 0 25px 0 100px;
+    margin: 0 25px 0 35%;
     cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ Link{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: #B0D0F6;
@@ -207,8 +207,9 @@ Link{
 #cancel_icon{
     color:#fff;
     position: relative;
-    top: -7.5%;
+    top: -6.5%;
     left: 90%;
+    z-index: 12; 
 }
 
 }
