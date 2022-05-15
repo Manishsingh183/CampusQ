@@ -12,6 +12,8 @@ function PostCard(props){
 
     const [moreAns,setMoreAns] = useState("");
     const [yourAns,setYourAns] = useState(0);
+    const relatedAns = props.answer;
+    let i=0;
 
      function HandleComment(){
 
@@ -27,13 +29,20 @@ function PostCard(props){
      }
 
     async function handleSubmit(){
+        setYourAns(0);
+         window.location.reload(); // this one refreshes page
+        console.log(props.id,moreAns)
         const data = {
             id:props.id,
-            ans: yourAns
+            ans: moreAns
         }
-         await axios.post(baseUrl+'newans',qs.stringify(data))
-         .then(res=>console.log(res))
+        await axios.post(baseUrl+'newans',qs.stringify(data))
+         .then(res=>{console.log(res)})
          .catch(err=>console.log(err));
+
+         
+
+        
      }
 
 
@@ -56,7 +65,7 @@ function PostCard(props){
                      Sed quis maximus nibh, non pulvinar velit. Sed euismod bibendum lectus, sit amet laoreet nunc ultricies elementum. 
                      In hac habitasse platea dictumst. Quisque lorem mi, vulputate ac scelerisque ac, dapibus non neque. 
                      Proin dolor urna, egestas nec bibendum in, gravida ac mauris.</p> */}
-                   <p className='postcard_p'>{props.answer}</p>
+                   <p className='postcard_p'>{props.answer[0]}</p>
                   </div>
                   <FontAwesomeIcon icon="fa-solid fa-thumbs-up" />
                   <button className='comment' onClick={HandleComment}>Comment</button>
@@ -64,16 +73,23 @@ function PostCard(props){
             </div>
              {yourAns ? <div className='ansbox'><textarea type="text" onChange={handlechange} rows='6' cols='50' placeholder='Type message here' name='moreAns' value={moreAns}/>
              <button id='post-ans-submit' placeholder='Type your Answer here' onClick={handleSubmit} type='submit'>Submit</button></div> : null}
-            <div className='RelPost'>
-                <RelatedPost/>
-            </div>
-            <div className='RelPost'>
-                <RelatedPost/>
-            </div>
-            <div className='RelPost'>
-                <RelatedPost/>
-            </div>
             
+            <div>
+           
+               {relatedAns.map((ele)=>{
+                     if(i!=0 && relatedAns.length>1){
+                     return (
+                    <div className='RelPost'>
+                       <RelatedPost
+                        answer ={ele}
+                    />
+                    </div>
+                   )}
+                   i = i+1;
+                })
+                }
+                
+            </div>
         </div>
     )
 } 

@@ -61,8 +61,8 @@ function Contact(){
                         <div className='contact_container'>
                            
                            <div className='contact_form'>
-                                <input onChange={handlechange} type='text' name='contact_name' value={Content.contact_name} placeholder="Full Name"></input>
-                                <input onChange={handlechange} type='email' name='contact_mail' value={Content.contact_mail} placeholder="College Email" ></input>
+                                <input id="contact-input" onChange={handlechange} type='text' name='contact_name' value={Content.contact_name} placeholder="Full Name"></input>
+                                <input id="contact-input" onChange={handlechange} type='email' name='contact_mail' value={Content.contact_mail} placeholder="College Email" ></input>
                                 <textarea type="text" onChange={handlechange} rows='6' cols='31' placeholder='Type message here' name='contact_content' value={Content.contact_content}/>
                                 <button onClick={submitChange} type='submit'>Send Message</button>
                           </div>

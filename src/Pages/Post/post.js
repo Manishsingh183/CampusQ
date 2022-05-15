@@ -8,6 +8,7 @@ import baseURL from '../../baseUrl';
 function Post(){   
 
     const [data,setData] = useState({
+                                    id:"",
                                     question:"",
                                     answers:[],
                                     date:""
@@ -37,8 +38,9 @@ function Post(){
         <React.Fragment>
               <NavBar />
               <PostCard
+                  id={data.id}
                   question={data.question}
-                  answer={data.answers[0]}
+                  answer={data.answers}
                   date={data.date}
               /> 
         </React.Fragment>

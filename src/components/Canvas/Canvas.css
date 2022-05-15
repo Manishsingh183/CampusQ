@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1024px) {
+
 #canvas {
     background-color: #EFF4FA;
     width: 100%;
@@ -84,8 +84,71 @@ Link{
 }
 
 
-}
-/* ................................Below 1024 .............................................. */
+/* ................................Below 1024 and above 640 .............................................. */
+
+@media only screen and (max-width: 1024px){
+    #canvas {
+        background-color: #EFF4FA;
+        width: 100%;
+        height: 100vh;
+        max-width: 100%;
+        overflow: auto;
+        opacity: 0.9;
+        background-image: url("../../../public/images/background2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    #canvas::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+    }
+    
+    #ask-btn {
+        position: relative;
+        top: 150px;
+        left: -65%;
+    
+        background-color: #F17C7F;
+        color: white;
+        border: 1px solid grey;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 4px 15px;
+        cursor: pointer;
+    }
+    
+    #vertical-line > * {
+        display: none;
+    }
+    
+    #home-container {
+        position: relative;
+        top: 60px;
+        left: 20%;
+        float: left;
+        width: 70%;
+    
+    }
+    
+    #cards-container {
+        display: flex;
+        /* float: left; */
+        position: relative;
+        right: 10%;
+        width: 120%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -6.5%;
+        text-decoration: none;
+    }
+    Link{
+        text-decoration: none;
+    }
+    }
+
+
+/* ................................Below 640 .............................................. */
 
 @media only screen and (max-width: 640px) {
 #canvas {
@@ -123,11 +186,12 @@ Link{
 
 #cards-container {
     display: flex;
-    float: left;
+    /* float: left; */
     position: relative;
-    right: 5%;
+    right: 15%;
+    width: 120%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: -6.5%;
     text-decoration: none;
 }

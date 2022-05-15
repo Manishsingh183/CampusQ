@@ -1,8 +1,14 @@
 
+#nav-center{
+        display:block;
+        justify-content: center;
+        align-items: center;
+}
 
-@media only screen and (min-width: 1024px) {
 #navbar > * {
     display: inline-block;
+    width:fit-content;
+    padding: 0 1%;
     /* font-family: 'Kaushan Script', 'cursive'; */
     text-decoration: none;
 }
@@ -11,21 +17,145 @@
     display: none;
 }
 
-h1 {
+#nav-more-links{
+    display: -webkit-inline-box;
+    float: left;
+}
+
+#campusTitle {
     color: #054C3C;
     margin: 0 25px 0 100px;
     cursor: pointer;
 }
 
-h1 > span {
+#campusTitle > span {
     color: #F32323;
     font-family: 'Kaushan Script', 'cursive';
 }
 
+#search-input-form{
+    width: fit-content;
+}
+
 #search-input {
-    height: 25px;
+    height: 30px;
     width: 200px;
-    margin: 0 50px 0 25px;
+    /* margin: 0 50px 0 25px; */
+    border-radius: 13px;
+    border: 2px solid gray;
+}
+
+#navbar {
+    background-color: #B0D0F6;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-btn {
+    /* color: #1E90FF; */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: none;
+    background-color: inherit;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    /* margin: auto 10px; */
+}
+.nav-btn:hover {
+    color: aquamarine;
+}
+
+.login-btn {
+    background-color: #1C6DD0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 2%;
+}
+.login-btn:hover {
+    background-color: #1a64bf;
+}
+
+.icon-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-div > span {
+    padding-left: 5px;
+    text-decoration: none;
+  }
+
+
+
+/* ...........................................Tablet View..................................... */
+
+                      
+  @media only screen and (max-width:1024px) {
+
+ #nav-center{
+        display:block;
+        justify-content: center;
+        align-items: center;
+}
+
+ #navbar > * {
+    display: inline-block;
+    width:fit-content;
+    padding: 0 1%;
+    /* font-family: 'Kaushan Script', 'cursive'; */
+    text-decoration: none;
+}
+
+#more-option{
+    margin: 0 20px 0 3%;
+    height: 38px;
+    width: 38px;
+}
+
+#nav-more-links{
+    display: none;
+    float: left;
+}
+
+#campusTitle {
+    color: #054C3C;
+    margin: 120%;
+    cursor: pointer;
+}
+
+#campusTitle > span {
+    color: #F32323;
+    font-family: 'Kaushan Script', 'cursive';
+}
+
+#search-input-form{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#search-input {
+    height: 30px;
+    width: 200px;
+    /* margin: 0 50px 0 25px; */
     border-radius: 13px;
     border: 2px solid gray;
 }
@@ -84,20 +214,99 @@ h1 > span {
 .icon-div > span {
     padding-left: 5px;
   }
-
-
-
-
-
+  #g-login{
+    display: none;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #B0D0F6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+.sidenav link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.sidenav link:hover {
+    color: #f1f1f1;
+  }
+  
+.sidenav #closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.sidenav p{
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.side-link{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+#mysideNav{
+    margin-top: -8%;
+    width:100%;
+}
+
+#cancel_icon{
+    color:#fff;
+    position: relative;
+    margin-top: 4%;
+    left: 90%;
+    z-index: 12; 
+    height: 40px;
+    width: 40px;
+}
+
+#search-input {
+    height: 30px;
+    width: 80%;
+    /* margin: 0 50px 0 25px; */
+    border-radius: 13px;
+    border: 2px solid gray;
+}
+   
+    
+}
+
+
+
+
+
+
+
 /* .......................................................................................................... */
 
                         /* Below 1024px */
+
+
+
+
+
 @media only screen and (max-width: 640px) {
 #campusTitle {
     color: #054C3C;
-    margin: 0 25px 0 35%;
     cursor: pointer;
+    margin-left: 50%;
 }
 
 h1 > span {
@@ -202,14 +411,17 @@ Link{
 
 
 #mysideNav{
+    margin-top: -8%;
     width:100%;
 }
 #cancel_icon{
     color:#fff;
     position: relative;
-    top: -6.5%;
+    margin-top: 4%;
     left: 90%;
     z-index: 12; 
+    height: 40px;
+    width: 40px;
 }
 
 }

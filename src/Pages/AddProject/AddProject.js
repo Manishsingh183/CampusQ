@@ -48,12 +48,13 @@ function AddProject(){
 
 
     return (
-        <div id="ask_popup">
-                <h3>Add Project</h3>
-                <Link to="/collab">
-                <CancelIcon id="askque_cancel_icon"/>
-                </Link>
-                <div id="ask-flex">
+        <div id="project_popup">
+                <div><h3>Add Project
+                <span><Link to="/collab">
+                <CancelIcon id="proj_cancel_icon"/>
+                </Link></span></h3>
+                </div>
+                <div id="proj-grid">
                      {/* Image Upload Box */}
                     <div id="img_upload">
                       <div id="font_upload">
@@ -70,7 +71,7 @@ function AddProject(){
                         <textarea type="text" onChange={handleChange} name="descr" cols="30" rows="10" value={Project.descr} placeholder="Describe your Project"/>
                         <input type='text' onChange={handleChange} name="skills" value={Project.skills} placeholder='Skills Required' />
                         <input type='text' onChange={handleChange} name="collab" value={Project.collab} placeholder='No of Collaborators Required' />
-                        <button id="que_submit_button" onClick={handleSubmit}>Submit</button>
+                        <button id="proj_submit_button" onClick={handleSubmit}>Submit</button>
                     </div>
                 </div>
                 {isRedirect ? <Navigate to="/collab" /> : null}

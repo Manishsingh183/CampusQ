@@ -28,6 +28,7 @@ body{
     font-weight: bold;
     margin-right: 2%;
     cursor: pointer;
+    margin-top: inherit;
 }
 
 #people{
@@ -127,11 +128,14 @@ body{
         background-color: #34F31F;
         font-size: 20px;
         font-weight: bold;
-        margin-right: 2%;
+        position: absolute;
+        top: 200px;
         cursor: pointer;
         text-align: center;
         line-height: 2;
         display: inline-flex;
+        margin-top: 20px;
+        
     }
     
     #people{

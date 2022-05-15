@@ -29,6 +29,8 @@
 }
 #grid_item p{
     margin-bottom: 5px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 #grid_item p span{

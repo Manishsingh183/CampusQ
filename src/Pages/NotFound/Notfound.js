@@ -9,19 +9,23 @@ function NotFound(){
    
     return <div>
       <NavBar/>
+    <div id="notfound-outerbox">
      <div id="notfound">
          <div id="together">
          <span><SentimentVeryDissatisfiedIcon id="failedIcon"/></span>
-         <h1>Service</h1>
-         <h1> Unavailable!!</h1>
          </div>
-         <Link to="/">
-         <button>Return to Home Page</button>
-         </Link>
-     </div>
-    
-
+         <div id="notfound-statement">
+            <div><h1>Service</h1></div>
+            <div><h1> Unavailable!!</h1></div>
+         </div>
     </div>
+    <div id="submit-return">
+         <Link to="/">
+         <button id="noservice-return-button">Return to Home Page</button>
+         </Link>
+    </div>    
+  </div>
+</div>
 
 }
 export default NotFound;
