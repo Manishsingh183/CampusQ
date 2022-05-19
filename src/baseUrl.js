@@ -1,2 +1,2 @@
-const baseUrl = "https://git.heroku.com/campusq2022.git/";
+const baseUrl = "https://campusq2022.herokuapp.com/";
 export default baseUrl;
