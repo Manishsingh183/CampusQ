@@ -69,8 +69,8 @@ function AddProject(){
                     <div id="proj_box">
                          <input id="Proj_name" onChange={handleChange} type='text' placeholder='Project Name' name="projName" value={Project.projName}  />
                         <textarea type="text" onChange={handleChange} name="descr" cols="30" rows="10" value={Project.descr} placeholder="Describe your Project"/>
-                        <input type='text' onChange={handleChange} name="skills" value={Project.skills} placeholder='Skills Required' />
-                        <input type='text' onChange={handleChange} name="collab" value={Project.collab} placeholder='No of Collaborators Required' />
+                        <input className='addproj_input' type='text' onChange={handleChange} name="skills" value={Project.skills} placeholder='Skills Required' />
+                        <input className='addproj_input' type='text' onChange={handleChange} name="collab" value={Project.collab} placeholder='No of Collaborators Required' />
                         <button id="proj_submit_button" onClick={handleSubmit}>Submit</button>
                     </div>
                 </div>

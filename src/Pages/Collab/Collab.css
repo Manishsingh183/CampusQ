@@ -1,7 +1,7 @@
 body{
     background-color: #EFF4FA;
 }
-@media only screen and (min-width: 1024px) {
+
 .collab-container{
     display: grid;
     grid-template-columns: 8% 92%;
@@ -86,20 +86,40 @@ body{
 #add-self:hover{
     background-color: #819cf7;
 }
+
+
+
+/* ................................Tablet View .............................................. */
+
+@media only screen and (max-width: 1024px) {
+
+    #add-proj{
+        display: none;
+    }
+
+    #project{
+        height: 80%;
+        border-radius: 5%;
+        /* padding: 15px; */
+        width: fit-content;
+        color: #fff;
+        background-color: #34F31F;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 2%;
+        cursor: pointer;
+        margin-top: inherit;
+        position: relative;
+        top: 60%;
+    }
+
 }
 
 
-/* ................................Below 1024 .............................................. */
+/* ................................Below 640 .............................................. */
 
 @media only screen and (max-width: 640px) {
 
-    
-    /* .mobileView{
-        display: flex;
-        float: left;
-    } */
-    
-    
     .collab-container{
         display: grid;
         grid-template-columns: 8% 92%;
@@ -110,11 +130,11 @@ body{
         color: black;
         width: 220px;
         height: 50px;
-        position: absolute;
-        left: 70%;
+        position: relative;
+        /* left: 20%; */
         display: flex;
-        justify-content: center;
-        top: 90px;
+        /* justify-content: center; */
+        top: 50%;
         margin-bottom: 50px;
         align-items: center;
     }
@@ -128,13 +148,15 @@ body{
         background-color: #34F31F;
         font-size: 20px;
         font-weight: bold;
-        position: absolute;
-        top: 200px;
+        position: relative;
+        top: 90%;
         cursor: pointer;
         text-align: center;
         line-height: 2;
         display: inline-flex;
         margin-top: 20px;
+        /* margin-right: 50%;
+        margin-left: 50%; */
         
     }
     
@@ -159,19 +181,7 @@ body{
     
     
     #add-proj{
-        z-index: 1;
-        cursor: pointer;
-        position: fixed;
-        top:60px;
-        width: fit-content;
-        border-radius: 5%;
-        color:#fff;
-        background-color: #22aee0;
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 2;
-        display: inline-flex;
+       display: none;
     }
     
     #add-proj:hover{
