@@ -71,7 +71,7 @@ function PostCard(props){
                   <button className='comment' onClick={HandleComment}>Comment</button>
                   <span><button className='wua' onClick={HandleAnswer}>Write your answer</button></span>
             </div>
-             {yourAns ? <div className='ansbox'><textarea type="text" onChange={handlechange} rows='6' cols='50' placeholder='Type message here' name='moreAns' value={moreAns}/>
+             {yourAns ? <div className='ansbox'><textarea id='newAns-textbox' type="text" onChange={handlechange} rows='6' cols='50' placeholder='Type message here' name='moreAns' value={moreAns}/>
              <button id='post-ans-submit' placeholder='Type your Answer here' onClick={handleSubmit} type='submit'>Submit</button></div> : null}
             
             <div>

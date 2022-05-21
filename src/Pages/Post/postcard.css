@@ -13,6 +13,17 @@ body{
     box-shadow: 1px 2px;
     border-radius: 1%;
 }
+.ansbox{
+    background-color:#fff;
+    height: fit-content;
+    width: 40%;
+    border: 1px solid;
+    margin:-5px 24% 2%;
+    padding: 1% 5%; 
+    box-shadow: 1px 2px;
+    border-radius: 1%;   
+}
+
 
 
 
@@ -61,19 +72,14 @@ h5{
     margin-bottom: 2px;
 }
 
-.ansbox{
-    background-color:#fff;
-    height: fit-content;
-    width: 40%;
-    border: 1px solid;
-    margin:-5px 24% 2%;
-    padding: 1% 5%; 
-    box-shadow: 1px 2px;
-    border-radius: 1%;   
-}
 
-#post-ans-submit{
-    
+
+
+.ansbox textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -102,6 +108,19 @@ h5{
         box-shadow: 1px 2px;
         border-radius: 1%;
     }
+
+    .ansbox{
+        background-color:#fff;
+        height: fit-content;
+        width: 62%;
+        border: 1px solid;
+        margin:-5px 14% 2%;
+        padding: 1% 5%; 
+        box-shadow: 1px 2px;
+        border-radius: 1%;   
+    }
+    
+    
 
     .RelPost{
         background-color:#fff;
