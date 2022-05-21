@@ -36,7 +36,7 @@ function NavBar() {
         : <div id="nav-center"><div id="navbar">
         
         <ReorderIcon id="more-option" onClick={handleClick}/>
-        <Link to="/">
+        <Link id="campusQlink" to="/">
         <h1 id="campusTitle">Campus<span>Q</span></h1>
         </Link>
         <form id="search-input-form">

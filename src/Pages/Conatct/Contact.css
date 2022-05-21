@@ -149,9 +149,8 @@ h2{
     }
     
     .grid_img img{
-        margin-top:20px;
-        height: 100px;
-        width: 110%;
+        height: 100%;
+        width: 100%;
     }
     
     

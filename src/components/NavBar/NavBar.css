@@ -313,6 +313,11 @@ h1 > span {
     color: #F32323;
     font-family: 'Kaushan Script', 'cursive';
 }
+
+#campusQlink{
+    height: fit-content;
+}
+
 #search-input {
     height: 25px;
     width: 200px;
@@ -411,17 +416,29 @@ Link{
 
 
 #mysideNav{
-    margin-top: -8%;
+    margin-top: -12%;
     width:100%;
 }
 #cancel_icon{
     color:#fff;
     position: relative;
     margin-top: 4%;
-    left: 90%;
+    left: 85%;
     z-index: 12; 
     height: 40px;
     width: 40px;
 }
+
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    #campusTitle {
+        color: #054C3C;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    
 
 }

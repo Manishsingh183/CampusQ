@@ -37,7 +37,7 @@ function Card(props) {
                 <img className="card-img" src="https://picsum.photos/50/50" alt="" />
             </div>
             <div className="name-div">
-                <h2>{props.name}</h2>
+                <h3>{props.name}</h3>
                 <p>{props.time} {props.date}, {props.branch}</p>
             </div>
         </div>

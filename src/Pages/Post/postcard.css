@@ -81,6 +81,7 @@ h5{
         position: relative;
         left: 46%;
         cursor: pointer;
+        background-color: inherit;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -88,6 +89,7 @@ h5{
         position: relative;
         left: 50%;
         cursor: pointer;
+        background-color: inherit;
     }
     
     .gridbox{
@@ -119,6 +121,25 @@ h5{
         position: relative;
         left: 40%;
         cursor: pointer;
+        background-color: inherit;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .wua{
+        position: relative;
+        left: 25%;
+        cursor: pointer;
+        background-color: inherit;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .wua{
+        position: relative;
+        left: 25%;
+        cursor: pointer;
+        width: min-content;
+        background-color: inherit;
     }
   }
 

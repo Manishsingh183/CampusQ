@@ -46,7 +46,7 @@ function Collab(){
             <NavBar/>
             {/* <h6>Hello</h6> */}
                 <div id='collab_btn'>
-                  <button id="project" onClick={handleProject}>Project</button>
+                  <button id="project">Project</button>
                   {/* <button id="people" onClick={handlePeople}>People</button> */}
                 </div>
                 <div>
