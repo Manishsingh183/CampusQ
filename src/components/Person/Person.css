@@ -9,8 +9,15 @@
     grid-row: 1 / 3;
 }
 
+#person-photo img{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+}
+
 .user_img img{
     border-radius: 50%;
     height: 100%;
     width:90%;
 }
+

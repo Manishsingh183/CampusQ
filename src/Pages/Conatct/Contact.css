@@ -37,6 +37,7 @@ h2{
 }
 
 
+
 .grid_contain{
     display: grid;
     grid-template-columns: auto;
@@ -149,8 +150,9 @@ h2{
     }
     
     .grid_img img{
-        height: 100%;
-        width: 100%;
+        margin-top: 20px;
+        height: 100px;
+        width: 110%;
     }
     
     
