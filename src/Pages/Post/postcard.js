@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import  {Navigate} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./postcard.css";
 import Person from '../../components/Person/Person';
@@ -12,8 +13,10 @@ function PostCard(props){
 
     const [moreAns,setMoreAns] = useState("");
     const [yourAns,setYourAns] = useState(0);
+    const [submithandle,setsubmithandle] = useState(0);
     const relatedAns = props.answer;
     let i=0;
+    const linkid = "/posts/"+props.id;
 
      function HandleComment(){
 
@@ -30,7 +33,8 @@ function PostCard(props){
 
     async function handleSubmit(){
         setYourAns(0);
-         window.location.reload(); // this one refreshes page
+        setsubmithandle(1);
+        //  window.location.reload(); // this one refreshes page
         console.log(props.id,moreAns)
         const data = {
             id:props.id,
@@ -73,7 +77,6 @@ function PostCard(props){
             </div>
              {yourAns ? <div className='ansbox'><textarea id='newAns-textbox' type="text" onChange={handlechange} rows='6' cols='50' placeholder='Type message here' name='moreAns' value={moreAns}/>
              <button id='post-ans-submit' placeholder='Type your Answer here' onClick={handleSubmit} type='submit'>Submit</button></div> : null}
-            
             <div>
            
                {relatedAns.map((ele)=>{
@@ -90,7 +93,9 @@ function PostCard(props){
                 }
                 
             </div>
+            {submithandle ? <Navigate to='/' /> : null}
         </div>
+        
     )
 } 
 export default PostCard;
