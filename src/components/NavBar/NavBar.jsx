@@ -31,7 +31,7 @@ function NavBar() {
             <p><Link id="link" className="side-link" to="/contact">Contact Us</Link></p>
 //             <p><Link id="link" className="side-link" to="/askque">Ask Question</Link></p>
             <p><Link id="link" className="side-link" to="/add_proj">Add Project</Link></p>
-//             <p><Login /></p>
+            <p><Login /></p>
         </div>
         : <div id="nav-center"><div id="navbar">
         
