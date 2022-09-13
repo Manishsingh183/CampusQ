@@ -65,9 +65,9 @@ function NavBar() {
         </form> */}
 
 
-//         <div id="g-login">
-//         <Login />
-//         </div>
+        <div id="g-login">
+        <Login />
+        </div>
         
         </div></div>}
     </div>)
