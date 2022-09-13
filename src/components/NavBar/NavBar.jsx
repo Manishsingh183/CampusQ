@@ -64,12 +64,16 @@ function NavBar() {
                 <span>Login</span>
             </div>
         </button>
-        </form> */}
-
-
+        </form> 
+        
         <div id="g-login">
         <Login />
         </div>
+ 
+        */}
+
+
+        
         
         </div></div>}
     </div>)
