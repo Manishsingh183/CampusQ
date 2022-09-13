@@ -29,7 +29,7 @@ function NavBar() {
             <p><Link id="link" className="side-link" to="/collab">Collaboration</Link></p>
             <p><Link id="link" className="side-link" to="/resources">Resources</Link></p>
             <p><Link id="link" className="side-link" to="/contact">Contact Us</Link></p>
-            <p><Link id="link" className="side-link" to="/askque">Ask Question</Link></p>
+//             <p><Link id="link" className="side-link" to="/askque">Ask Question</Link></p>
             <p><Link id="link" className="side-link" to="/add_proj">Add Project</Link></p>
             <p><Login /></p>
         </div>
@@ -63,9 +63,11 @@ function NavBar() {
             </div>
         </button>
         </form> */}
-        <div id="g-login">
-        <Login />
-        </div>
+
+
+//         <div id="g-login">
+//         <Login />
+//         </div>
         
         </div></div>}
     </div>)
