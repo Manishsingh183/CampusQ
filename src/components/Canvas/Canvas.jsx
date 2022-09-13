@@ -69,10 +69,10 @@ function Canvas() {
                         <Card 
                         key={ele._id}
                         id = {ele._id}
-                        name="Denise Richards"
+                        name="Anonymous User"
                         time={ele.time}
                         date={ele.date}
-                        branch="Rocket Science"
+                        branch="MNIT JAIPUR"
                         question={ele.question}
                         topAnswer={ele.answers[0]}
                     />
