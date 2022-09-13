@@ -72,8 +72,8 @@ function PostCard(props){
                    <p className='postcard_p'>{props.answer[0]}</p>
                   </div>
                   <FontAwesomeIcon icon="fa-solid fa-thumbs-up" />
-                  <button className='comment' onClick={HandleComment}>Comment</button>
-                  <span><button className='wua' onClick={HandleAnswer}>Write your answer</button></span>
+                  {/*  <button className='comment' onClick={HandleComment}>Comment</button> */} 
+                 <span><button className='wua' onClick={HandleAnswer}>Write your answer</button></span>
             </div>
              {yourAns ? <div className='ansbox'><textarea id='newAns-textbox' type="text" onChange={handlechange} rows='6' cols='50' placeholder='Type message here' name='moreAns' value={moreAns}/>
              <button id='post-ans-submit' placeholder='Type your Answer here' onClick={handleSubmit} type='submit'>Submit</button></div> : null}
